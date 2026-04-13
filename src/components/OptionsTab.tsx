@@ -158,7 +158,7 @@ export default function OptionsTab({
                 dispatch(setRows(parseInt(value.target.value)));
               }}
               min={1}
-              max={10}
+              max={100}
               value={rows}
               className={styles.value}
               type="range"

@@ -11,7 +11,7 @@ import { persistReducer, persistStore } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 
 const itemArray = [];
-for (let i = 0; i < 100; ++i) {
+for (let i = 0; i < 10,000; ++i) {
   itemArray.push({ title: "", cover: "" });
 }
 
@@ -212,7 +212,7 @@ export const stateSlice = createSlice({
     },
     restart: (state) => {
       const itemArray = [];
-      for (let i = 0; i < 100; ++i) {
+      for (let i = 0; i < 10,000; ++i) {
         itemArray.push({ title: "", cover: "" });
       }
       copy(state, initialState);

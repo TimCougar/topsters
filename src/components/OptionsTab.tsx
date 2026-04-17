@@ -174,7 +174,7 @@ export default function OptionsTab({
                 dispatch(setColumns(parseInt(value.target.value)));
               }}
               min={1}
-              max={10}
+              max={100}
               value={columns}
               className={styles.value}
               type="range"
